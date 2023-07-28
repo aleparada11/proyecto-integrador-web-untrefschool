@@ -1,0 +1,153 @@
+/* ******Custom Properties****** */
+:root {
+  --primercolor: rgb(252, 115, 0);
+  --primercolorop: rgba(252, 115, 0, 0.75);
+  --segundocolor: rgb(31, 138, 112);
+  --segundocolorop: rgba(31, 138, 112, 0.75);
+  --segundocolorop2: rgba(31, 138, 112, 0.1);
+  --tercercolor: rgb(24, 24, 35);
+  --tercercolorop: rgba(24, 24, 35, 0.75);
+
+  --linkcolor: rgb(0, 66, 90);
+  --linkcolorop: rgba(0, 66, 90, 0.75);
+
+  --backcolor: rgb(239, 245, 245);
+  --backcolorop: rgba(239, 245, 245, 0.75);
+}
+
+/* ***** Reset Estilos ***** */
+body{
+  font-family: "Belanosima", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+nav a{
+  color: var(--tercercolor);
+}
+
+/* ***** Estilos Bootstrap ***** */
+.bg-body-tertiary {
+  background-color: var(--segundocolor) !important;
+}
+.col{
+  text-align: center;
+}
+.navbar-brand img {
+  width: auto;
+  height: 48px;
+}
+.nav-link {
+  color: var(--backcolorop);
+  font-size: 0.9rem;
+}
+
+.nav-item{
+  padding-left: 0.5rem;
+}
+.nav-item:hover {
+  background-color: var(--backcolor);
+}
+
+/* ***** Mis estilos ***** */
+
+/*HEADER*/
+.header1 {
+  height: 320px;
+  background:   url(/img/img/istockphoto-95806037-612x612.jpg);
+  background-size: 100% 100%;
+}
+
+.titulo {
+  width: 100%;
+  color:var(--backcolor);
+  top: 15%;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+/*HEADER*/
+
+/*MAIN*/
+.bg-gradient-1-2{
+  background-color: rgba(31, 138, 112,0.75);
+  background-image: linear-gradient(
+  var(--segundocolorop2),
+  var(--backcolor) 90%
+  );
+  background-image: linear-gradient(
+  var(--backcolor),
+  rgba(31, 138, 112,0.75)
+  );
+}
+
+
+/*MAIN*/
+
+/*FOOTER*/
+
+.col p{
+  margin-bottom: 1rem;
+}
+.copy{
+  color: var(--tercercolor);
+  text-align: center;
+}
+footer a{
+  display: block;
+  font-size: 0.8rem;
+}
+
+footer h6 {
+  margin-top: 0.5rem;
+}
+
+.ubicacion{
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; 
+}
+
+.responsive-iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+
+}
+
+/* FOOTER*/
+
+/* ***** FIN MIS ESTILOS ***** */
+
+/* // X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  ...;
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  ...;
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  ...;
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  ...;
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  ...;
+}
