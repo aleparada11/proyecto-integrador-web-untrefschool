@@ -4,7 +4,7 @@
   --primercolorop: rgba(252, 115, 0, 0.75);
   --segundocolor: rgb(31, 138, 112);
   --segundocolorop: rgba(31, 138, 112, 0.75);
-  --segundocolorop2: rgba(31, 138, 112, 0.1);
+  --segundocolorop2: rgba(31, 138, 112, 0.25);
   --tercercolor: rgb(24, 24, 35);
   --tercercolorop: rgba(24, 24, 35, 0.75);
 
@@ -21,14 +21,21 @@ body{
   font-family: "Poppins", sans-serif;
 }
 
+.card{
+  margin-bottom: 1rem;
+}
+
 nav a{
   color: var(--tercercolor);
 }
+
+/* ***** FIN Reset Estilos ***** */
 
 /* ***** Estilos Bootstrap ***** */
 .bg-body-tertiary {
   background-color: var(--segundocolor) !important;
 }
+
 .col{
   text-align: center;
 }
@@ -48,6 +55,9 @@ nav a{
   background-color: var(--backcolor);
 }
 
+
+/* ***** FIN Estilos Bootstrap ***** */
+
 /* ***** Mis estilos ***** */
 
 /*HEADER*/
@@ -60,13 +70,13 @@ nav a{
 .titulo {
   width: 100%;
   color:var(--backcolor);
-  top: 15%;
+  top: 7%;
   left: 50%;
-  position: absolute;
+  position: relative;
   text-align: center;
   transform: translate(-50%, -50%);
 }
-/*HEADER*/
+/* FIN HEADER*/
 
 /*MAIN*/
 .bg-gradient-1-2{
@@ -82,24 +92,60 @@ nav a{
 }
 
 
-/*MAIN*/
+/* FIN MAIN*/
+
+
+/* SECCION */
+
+.bg-card-noti{
+  background-color: var(--primercolor);
+}
+.bg-card-bt-noti{
+  background-color: var(--segundocolor);
+}
+.bt-noti:hover{
+  background-color: var(--backcolor);
+  color: var(--segundocolor);
+}
+
+
+.text-seccion{
+  font-size: 14px ;
+  text-align: justify;
+}
+.text-card-tit-noti{
+  font-size:larger;
+  font-style: italic;
+  color: var(--backcolor);
+}
+
+/* FIN SECCION */
+
+/* FORM */
+
+.bg-card-bt-frm{
+  background-color: var(--primercolor);
+  color:var(--backcolor);
+}
+.bt-frm:hover{
+  background-color: var(--backcolor);
+  color: var(--segundocolor);
+}
+.form1{
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+/* FIN FORM */
 
 /*FOOTER*/
 
-.col p{
-  margin-bottom: 1rem;
-}
 .copy{
   color: var(--tercercolor);
   text-align: center;
 }
 footer a{
   display: block;
-  font-size: 0.8rem;
-}
-
-footer h6 {
-  margin-top: 0.5rem;
+  font-size: 14px;
 }
 
 .ubicacion{
@@ -120,7 +166,7 @@ footer h6 {
 
 }
 
-/* FOOTER*/
+/* FIN FOOTER*/
 
 /* ***** FIN MIS ESTILOS ***** */
 
